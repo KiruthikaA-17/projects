@@ -1,0 +1,173 @@
+.services {
+  background: #efefef;
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+  padding: 30px;
+}
+
+.title {
+  padding: 20px;
+  font-size: larger;
+}
+
+.service-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 90px 50px;
+  padding-bottom: 80px;
+}
+.service-img {
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  display: flex;
+}
+
+.service-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hair-services,
+#skin-services,
+#nail-services,
+#spa,
+#bridal {
+  display: none;
+}
+
+#hairTreat .service-img:nth-child(1) {
+  background-image: url("images/colortreat.png");
+}
+#hairTreat .service-img:nth-child(2) {
+  background-image: url("images/scalptreat.png");
+}
+
+#hairTreat .service-img:nth-child(3) {
+  background-image: url("images/moistureTreat.png");
+}
+
+#hairTreat .service-img:nth-child(4) {
+  background-image: url("images/keratin.jpg");
+}
+
+#hairTreat .service-img:nth-child(5) {
+  background-image: url("images/glosstreat.png");
+}
+
+/*hair style*/
+
+#hairStyle .service-img:nth-child(1) {
+  background-image: url("images/feather.png");
+}
+
+#hairStyle .service-img:nth-child(2) {
+  background-image: url("images/layer.png");
+}
+
+#hairStyle .service-img:nth-child(3) {
+  background-image: url("images/fringe.png");
+}
+
+#hairStyle .service-img:nth-child(4) {
+  background-image: url("images/butterfly.png");
+}
+
+#hairStyle .service-img:nth-child(5) {
+  background-image: url("images/taper.png");
+}
+
+#hairStyle .service-img:nth-child(6) {
+  background-image: url("images/curly.png");
+}
+
+#hairStyle .service-img:nth-child(7) {
+  background-image: url("images/professional.png");
+}
+
+#hairStyle .service-img:nth-child(8) {
+  background-image: url("images/slickedback.png");
+}
+
+#hairStyle .service-img:nth-child(9) {
+  background-image: url("images/thickshort.png");
+}
+
+/*skin*/
+
+#skin-services {
+  height: 100vh;
+}
+
+.skinService {
+  text-align: center;
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  transition: 0.6s;
+  margin: 0px 20px;
+  border: 2px solid black;
+}
+
+.skinService p {
+  color: black;
+  font-size: 30px;
+  margin: auto;
+}
+
+/*Nails*/
+#nails .service-img:nth-child(1) {
+  background-image: url("images/manicure.png");
+}
+
+#nails .service-img:nth-child(2) {
+  background-image: url("images/pedicure.png");
+}
+
+#nails .service-img:nth-child(3) {
+  background-image: url("images/Acrylic.png");
+}
+
+/*Spa*/
+
+#spa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #3f310d99),
+    url("images/spaBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#spa h1 {
+  color: white;
+}
+
+#spa li {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#bridal .service-img {
+  width: 400px !important;
+  height: 450px !important;
+}
+
+#bridal .service-img:nth-child(1) {
+  background-image: url("images/Bride.png");
+}
+
+#bridal .service-img:nth-child(2) {
+  background-image: url("images/Groom.png");
+}
+#bridal {
+  height: 100vh;
+}

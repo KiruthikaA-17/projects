@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B&B the Unisex Salon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="homepage.js"></script>
+  </head>
+  <body>
+    <div id="homepage">
+      <!--home Page-->
+      <section id="banner">
+        <img src="images/logo.jpg" class="logo" />
+        <div class="textcontents">
+          <h1
+            style="
+              font-size: 60px;
+              font-style: oblique;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                'Helvetica Neue', sans-serif;
+            "
+          >
+            UNLEASH YOUR BEAUTY
+          </h1>
+          <div class="line"></div>
+        </div>
+
+        <div class="btnSection">
+          <a class="animate" href="#services">SERVICES</a>
+          <a class="animate" href="#visit">BOOK A VISIT</a>
+        </div>
+      </section>
+
+      <!--nav bar-->
+      <div id="sidenav">
+        <nav>
+          <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#aboutUs">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#visit">BOOK APPOINTMENT</a></li>
+            <li><a href="#footer">MEET US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="menu" onclick="navClick()">
+        <img src="images/menu.png" alt="" id="menuImg" />
+      </div>
+
+      <!--About US-->
+      <section id="aboutUs">
+        <div class="contents">
+          <div>
+            Buzz & Bangs is your ultimate fashion destination. Excellent
+            service, unique makeovers and creative styling is our forte. We
+            vigorously strive every day to sustain our rating. Our experienced
+            staff’s utmost priority is customer satisfaction. We would move
+            heaven and earth to meet the needs of our clients. Buzz & Bangs’s
+            professional team stay up to date with all the fashion trends and
+            ensures our clients smile with satisfaction when they walk out. By
+            developing a deeper understanding of the beauty industry, we step up
+            our game every day to sustain ourselves in this competitive world of
+            beauty and fashion Our wide range of services and products would
+            make it hard to choose just one. We offer the best- hair colour,
+            hair spa, keratin, smoothing, straightening, facials, bridal makeup,
+            and nail art services for you. Some of our premium products include
+            Kerablast, Schwarzkopf, Glam, Moroccanoil.<br /><br />
+            &nbsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&nbsp;&emsp;&emsp;
+            &nbsp;&emsp; Hair. Skin. Spa. Bridal. Nail.
+          </div>
+          <!-- <img src="images/hairStylst.jpg" id="hairStylist" /> -->
+        </div>
+      </section>
+
+      <!--Services-->
+      <section id="services">
+        <div class="title">
+          <h1>OUR SERVICES</h1>
+        </div>
+        <div id="service-box">
+          <div class="service-img" onclick="servicecall('hair')">
+            <div id="textbox"></div>
+            <!-- <img src="images/service1.png" alt="" /> -->
+          </div>
+          <div class="service-img" onclick="servicecall('skin')">
+            <div id="textbox"></div>
+            <!-- <img src="images/service1.png" alt="" /> -->
+          </div>
+          <div class="service-img" onclick="servicecall('nails')">
+            <div id="textbox"></div>
+            <!-- <img src="images/service1.png" alt="" /> -->
+          </div>
+          <div class="service-img" onclick="servicecall('bridal')">
+            <div id="textbox"></div>
+            <!-- <img src="images/service1.png" alt="" /> -->
+          </div>
+          <div class="service-img" onclick="servicecall('spa')">
+            <div id="textbox"></div>
+            <!-- <img src="images/service1.png" alt="" /> -->
+          </div>
+        </div>
+      </section>
+
+      <!--Appointment-->
+      <section class="appointment" id="visit">
+        <h1 class="heading">BOOK YOUR APPOINTMENT NOW!!</h1>
+        <div class="formContainer">
+          <form action="">
+            <h3>Book your first visit</h3>
+            <label>Name :<span>*</span></label>
+            <input class="inputwithLine" type="text" required />
+            <label>Email : <span>*</span> </label>
+            <input class="inputwithLine" type="email" required />
+            <label>Pick a date: <span>*</span></label>
+            <input class="inputwithLine" type="date" required />
+            <label>Service:<span>*</span></label>
+            <input class="inputwithLine" type="text" required />
+            <label>Time: <span>*</span></label>
+            <div class="input">
+              <input type="time" class="time" required />
+              <select
+                class="session"
+                style="
+                  width: 150px;
+                  height: 25px;
+                  border-radius: 5px;
+                  font-size: 15px;
+                "
+              >
+                <option>-session-</option>
+                <option>AM</option>
+                <option>PM</option>
+              </select>
+            </div>
+          </form>
+          <button class="btn" onclick="book()">Book a visit</button>
+        </div>
+      </section>
+      <!-- footer -->
+      <section id="footer">
+        <div class="title">
+          <h1>CONTACT</h1>
+        </div>
+        <div class="footer-row">
+          <div class="footer-left">
+            <h1 class="contact">Opening Hours</h1>
+            <p class="hours">Monday to Friday - 9am to 9pm</p>
+            <p class="hours">Saturday and Sunday - 8am to 11pm</p>
+          </div>
+          <div class="footer-right">
+            <h1 class="contact">Get In Touch</h1>
+
+            <p>
+              10,Anna Street, Chennai - 600001
+              <img src="images/map.png" class="src" />
+            </p>
+            <a class="mail" href="mailto:Buzz&Bangs@gmail.com"
+              >Buzz&Bangs@gmail.com
+              <img src="images/paper-plane.png" class="src" />
+            </a>
+            <p>
+              +91 9843337657 <img src="images/phone-call.png" class="src" />
+            </p>
+          </div>
+        </div>
+        <div class="social-links">
+          <img src="images/facebook-circular-logo.png" alt="" class="social" />
+          <img src="images/instagram (1).png" alt="" class="social" />
+          <img src="images/youtube.png" alt="" class="social" />
+          <img src="images/twitter.png" alt="" class="social" />
+          <p class="copyright">©️Copyright Buzz & Bangs</p>
+        </div>
+      </section>
+    </div>
+    <!-- service page -->
+    <div id="servicePage">
+      <div id="close" onclick="backClick()">
+        <img src="images/whiteClose.png" alt="" id="btnClose" />
+      </div>
+      <section id="hair-services" class="servicesClass">
+        <div class="title">
+          <h1>HAIR TREATMENT</h1>
+        </div>
+        <div id="hairTreat" class="service-boxClass">
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showDetails(0)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showDetails(1)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showDetails(2)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showDetails(3)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showDetails(4)"
+          ></div>
+        </div>
+        <hr />
+        <div class="title">
+          <h1>HAIR STYLING</h1>
+        </div>
+        <div id="hairStyle" class="service-boxClass">
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(0)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(1)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(2)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(3)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(4)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(5)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(6)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(7)"
+          ></div>
+          <div
+            dataVal="val"
+            class="service-imgClass"
+            onmouseover="showStylingDetails(8)"
+          ></div>
+        </div>
+      </section>
+
+      <section id="skin-services" class="servicesClass">
+        <div class="title">
+          <h1>SKIN TREATMENTS</h1>
+          <br /><br />
+          <h2>Contact (+91 8976234567) for Price Details!</h2>
+        </div>
+        <div class="service-boxClass">
+          <div class="skinService"></div>
+          <div class="skinService"></div>
+          <div class="skinService"></div>
+          <div class="skinService"></div>
+          <div class="skinService"></div>
+        </div>
+      </section>
+
+      <section id="nail-services" class="servicesClass">
+        <div class="title">
+          <h1>Nail services</h1>
+        </div>
+        <div class="service-boxClass" id="nails">
+          <div val="Manicure - Rs.400.00" class="service-imgClass"></div>
+          <div val="Pedicure - Rs.600.00" class="service-imgClass"></div>
+          <div val="Nail Extension - Rs.500.00" class="service-imgClass"></div>
+        </div>
+      </section>
+
+      <section id="spa" class="servicesClass">
+        <div class="title">
+          <h1>SPA</h1>
+        </div>
+        <ul>
+          <li>Body Spa (100mins) - Rs. 2600.00</li>
+          <li>Neck & Shoulder Massage (30mins) - Rs. 800.00</li>
+          <li>Neck,Shoulder & Back Massage (40mins) - Rs. 1200.00</li>
+          <li>Head Massage (40mins) - Rs. 600.00</li>
+          <li>Muscle Relaxer (90mins) - Rs. 3200.00</li>
+          <li>Foot Massage (30mins) - Rs. 400.00</li>
+        </ul>
+      </section>
+
+      <section id="bridal" class="servicesClass">
+        <div class="title">
+          <h1>BRIDAL-MAKEUP</h1>
+        </div>
+        <div>
+          <div class="service-boxClass">
+            <div
+              class="service-imgClass"
+              id="bridalCard1"
+              onclick="showcontent(1)"
+            ></div>
+            <div
+              class="bridalContent"
+              id="bridalContent1"
+              onclick="hidecontent(1)"
+            >
+              <div class="bridal-para">
+                <h2>3 IN 1</h2>
+                <h3>
+                  Pre Bridal Package<br />
+                  Reciption Package<br />
+                  Bridal Salon Package
+                </h3>
+                <h1>₹25000</h1>
+                <p>For more details:<br />Contact(+91 9876549013)</p>
+              </div>
+            </div>
+            <div
+              class="service-imgClass"
+              id="bridalCard2"
+              onclick="showcontent(2)"
+            ></div>
+            <div
+              class="bridalContent"
+              id="bridalContent2"
+              onclick="hidecontent(2)"
+            >
+              <div class="bridal-para2">
+                <h2 class="new" style="text-align: center; padding-top: 35px">
+                  3 NEW PACKAGES
+                </h2>
+                <h4>
+                  SIGNATURE - ₹18999 <br />DIAMOND - ₹15999 <br />GOLD - ₹12999
+                </h4>
+                <p>For more details:<br />Contact(+91 9876549013)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
